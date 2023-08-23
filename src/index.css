@@ -1,13 +1,168 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, serif;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://th.bing.com/th/id/OIP.XzjoNusfkgJ9cv3_nB9f1gHaK2?pid=ImgDet&rs=1");
+}
+a{
+  color: unset;
+  text-decoration: none;
+}
+input{
+  outline: none;
+  font-size: 25px;
+  width: 100%;
+}
+button{
+  outline: inset ;
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Navbar component style */
+.navbar{
+  width: 100%;
+  padding: 20px 10px;
+  background-image: url("https://th.bing.com/th/id/OIP._soW8jpFx8cAypNsFnN1iAAAAA?pid=ImgDet&rs=1");
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+.navbar h2{
+  background-color: wheat;
+  width: fit-content;
+  padding: 2px;
+  border-radius: 5px;
+}
+.brand-first-half{
+  margin-right: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.brand-last-half{
+  background-color: #40f6e7;
+  color: #3b3939;
+
+}
+.navbar button{
+  background-color: transparent;
+  color: #b84f4f;
+  border: 2px solid #a45959;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.navbar button:hover{
+  background-color: #FD0102;
+  color: white;
+} 
+
+/* AlbumsList component style */
+.albums-list{
+  width: 70%;
+  margin: auto;
+  padding-top: 73px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* List component style */
+.list{
+  width: 310px;
+  height: 200px;
+  background-image: url(https://live.staticflickr.com/2668/3939759559_d968bd4d6b_n.jpg);
+  margin-bottom:5px ;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list h3{
+  text-align: center;
+  text-transform: capitalize;
+}
+.button-group{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.update-btn{
+  background-color: black;
+  color: white;
+  border: 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.update-btn:hover{
+  background-color: white;
+  color: black;
+}
+.delete-btn{
+  cursor: pointer;
+  border: 0px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+}
+.delete-btn:hover{
+  color:green;
+  background-color:white;
+}
+
+/* UpdateAlbum component style */
+.update-album{
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  padding-top: 73px;
+  color: white;
+  border: none;
+}
+.form-container{
+  background-color: black;
+  background-image: url("https://wallpapercave.com/wp/OY52vgj.jpg");
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.inp-container{
+  margin: 10px;
+  color: darkkhaki;
+  border: .5px seashell;
+  border-radius: 5px;
+}
+.form-container button{
+  background-color: rgb(25, 180, 25);
+  padding: 10px 20px;
+  color: white;
+}
+
+/* addAlbum container style */
+.addalbum-container{
+  color: wheat;
+  padding-top: 75px;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+}
+.addalbum-form{
+  padding: 10px;
+  background-color: black;
+  background-image: url("https://live.staticflickr.com/6127/5994761207_7aa1a8f1b8_b.jpg");
+  margin-top: 50px;
+  border: 1px solid palegoldenrod
+}
+.addalbum-form button{
+  background-color: sienna;
+  padding: 10px 20px;
+  color: white;
 }
